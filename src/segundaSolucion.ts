@@ -1,8 +1,7 @@
-let btnSend = document.getElementById("Enviar");
-let posicionLlegada = document.getElementById("dato")
+let dato = document.getElementById("dato");
 
-btnSend.addEventlistener("click", () => {
-  switch(dato.value) {
+btnSend.addEventListener("click", () => {
+  switch (Number(dato.value)) {
     case 1:
       console.log("Medalla de oro");
       break;
